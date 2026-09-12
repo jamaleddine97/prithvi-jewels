@@ -10,6 +10,20 @@
   <link rel="icon" href="https://prithvijewels.com/wp-content/uploads/2026/04/cropped-ss-192x192.jpg" sizes="192x192">
   <link rel="apple-touch-icon" href="https://prithvijewels.com/wp-content/uploads/2026/04/cropped-ss-180x180.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- LetsNotify SDK -->
+
+  <script type="text/javascript" src="https://cdn.letsnotify.in//index.js"></script>
+  <script>
+    const sdk = new LetsNotifySDK();
+    const pushSDK = sdk.pushSdk();
+    pushSDK.init({
+      connectionId: "a0cac8e4-428d-4162-926e-d6e2d702232e",
+      serviceWorkerPath: "LetsNotifySW.js",
+      apiKey: "d6797463ec42c2e72c3c0f612b403b8e",
+      secretKey: "fa8fedd5c6fc4f3222454e4b4a612dd603251761494800e045f8cdb13e3963d8"
+    });
+  </script>
 </head>
 <body>
 
